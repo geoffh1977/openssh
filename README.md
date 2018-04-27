@@ -13,11 +13,11 @@ In order to run the container, the USERNAME and PASSWORD variables must be speic
 
 **Command Options:**
 
-> -e USERNAME -> The username that will be used to login
-> -e PASSWORD -> The password that will be used to login
-> -e BANNER - A banner message to display before the login prompt
-> -e MOTD - Message of the day. Displayed after the login prompt
-> -v {PATH}:/etc/ssh - A custom config and files for the service to use
+ * -e USERNAME -> The username that will be used to login
+ * -e PASSWORD -> The password that will be used to login
+ * -e BANNER - A banner message to display before the login prompt
+ * -e MOTD - Message of the day. Displayed after the login prompt
+ * -v {PATH}:/etc/ssh - A custom config and files for the service to use
 
 You can place the container in detached mode by replacing the "-it" switch with "-d". The BANNER and MOTD can also be placed in files in the /etc/ssh path and will be picked up and used by the startup script.
 
